@@ -1,0 +1,193 @@
+/* Base styles */
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Container for sections */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* Section styles */
+
+.section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Image styles */
+
+.section img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.section:not(.right) img {
+    margin-right: 30px;
+}
+
+.section.right img {
+    order: 2;
+    margin-left: 30px;
+}
+
+
+/* Text content styles */
+
+.text {
+    flex: 1;
+}
+
+.text h2 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.text p {
+    margin-bottom: 0;
+    color: #555;
+}
+
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .section img {
+        margin: 0 0 20px 0;
+        max-width: 100%;
+    }
+    .section.right img {
+        order: 1;
+        margin: 0 0 20px 0;
+    }
+}
+
+
+/* Additional professional touches */
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #3498db;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+
+/* Accent color for important elements */
+
+.accent {
+    color: #e74c3c;
+}
+
+.button {
+    background-color: #04AA6D;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #04AA6D;
+}
+
+.carousel-container {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    padding: 10px 0;
+}
+
+.carousel {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    animation: scroll 30s linear infinite;
+}
+
+.carousel img {
+    max-width: 200px;
+    margin: 0 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Keyframes for scrolling */
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* To make the carousel pause when hovered */
+
+.carousel-container:hover .carousel {
+    animation-play-state: paused;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .carousel img {
+        max-width: 150px;
+    }
+}

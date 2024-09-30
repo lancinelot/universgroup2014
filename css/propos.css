@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Font for the entire site */
+    line-height: 1.6; /* Line height for better readability */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+/* Container Styles */
+.container {
+    width: 90%;
+    max-width: 1200px; /* Maximum width for larger screens */
+    margin: 0 auto; /* Center the container */
+}
+
+/* About Us Section */
+.about-us {
+    display: flex; /* Flexbox for layout */
+    flex-direction: row; /* Align children in a row */
+    align-items: center; /* Center items vertically */
+    padding: 40px 0; /* Vertical padding */
+    background-color: #fff; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 40px; /* Space below the section */
+}
+
+.about-image {
+    flex: 1; /* Allow image section to take equal space */
+    margin-right: 20px; /* Space between image and content */
+}
+
+.about-image img {
+    max-width: 100%; /* Responsive image */
+    border-radius: 8px; /* Rounded corners for image */
+}
+
+.about-content {
+    flex: 2; /* Allow content section to take more space */
+}
+
+.about-content h2 {
+    color: #333; /* Dark color for heading */
+    margin-bottom: 15px; /* Space below heading */
+}
+
+.about-content p {
+    color: #666; /* Lighter text color */
+    margin-bottom: 15px; /* Space between paragraphs */
+}
+
+.learn-more {
+    display: inline-flex; /* Flexbox for button alignment */
+    align-items: center; /* Center icon and text */
+    background-color: #e67e22; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 4px; /* Rounded corners for button */
+    text-decoration: none; /* No underline */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.learn-more:hover {
+    background-color: #d35400; /* Darker color on hover */
+}
+
+.button-icon {
+    margin-left: 5px; /* Space between text and icon */
+}
+
+/* Services Section */
+#services {
+    padding: 40px 0; /* Padding for the services section */
+    background-color: #fff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+#services h2 {
+    text-align: center; /* Center the section heading */
+    color: #333; /* Dark color for heading */
+    margin-bottom: 30px; /* Space below heading */
+}
+
+.service-card {
+    background-color: #f4f4f4; /* Light background for service cards */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside cards */
+    margin: 10px; /* Space between cards */
+    text-align: center; /* Center text */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Shadow for cards */
+}
+
+.service-card h3 {
+    color: #e67e22; /* Highlight color for service title */
+    margin: 10px 0; /* Space around title */
+}
+
+.service-card p {
+    color: #666; /* Text color for description */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-us {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .about-image {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Space below image */
+    }
+
+    .learn-more {
+        width: 100%; /* Full-width button */
+        justify-content: center; /* Center content in button */
+    }
+}
+.about-image img {
+    max-width: 100%; /* Keep the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 400px; /* Limit the maximum height */
+    border-radius: 8px; /* Rounded corners for the image */
+}
