@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Votre agence immobilière pour acheter, vendre et louer des propriétés. Contactez-nous pour des conseils professionnels.">
+    <meta name="keywords" content="immobilier, vente, location, syndic, conseil immobilier">
+    <title>Accueil - Agence Immobilière</title>
+    <link rel="stylesheet" href="asset/css/styles.css">
+    <link rel="stylesheet" href="asset/css/service2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="asset/images/logo.png" alt="Logo">
+            </div>
+            <div class="contact-info">
+                <a href="universgroup.com"><i class="fas fa-envelope"></i>universgroup.com</a>
+                <div class="social-media">
+                    <a href="https://facebook.com" target=""><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target=""><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com" target=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="propos.html"><i class="fas fa-info-circle"></i> À propos</a></li>
+                    <li><a href="Location.html"><i class="fas fa-home"></i> Location</a></li>
+                    <li><a href="Vente.html"><i class="fas fa-building"></i> Vente</a></li>
+                    <li><a href="Conciergerie.html"><i class="fas fa-concierge-bell"></i> Gestion</a></li>
+                    <li><a href="Syndic.html"><i class="fas fa-users"></i> Syndic</a></li>
+                    <li><a href="Conseil_en_Immobilier.html"><i class="fas fa-lightbulb"></i> Conseil</a></li>
+                    <li><a href="Contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+    <!-- Hero Banner Section -->
+    <section class="hero" style="background-image: url('asset/images/service.png');">
+        <div class="container">
+            <h1>
+                Bienvenue à notre Agence Immobilière <br>
+                <span class="blue">G</span>
+                <span class="orange">U</span>
+                <span class="blue">I</span>
+            </h1>
+            <p>Trouvez votre propriété idéale dès aujourd'hui!</p>
+            <button onclick="location.href='#featured-properties'">Explorer</button>
+        </div>
+    </section>
+    <!-- Search Bar Section -->
+    <section class="search-bar ">
+        <div class="container ">
+            <h1>Recherchez des biens immobiliers</h1>
+            <form>
+                <form>
+                    <input type="text " name="search " placeholder="Ville, Type de bien... " required>
+                    <select name="property_type " required>
+                    <option value=" ">Type de propriété</option>
+                    <option value="apartment ">Appartement</option>
+                    <option value="villa ">Villa</option>
+                    <!-- Add more types -->
+                </select>
+                    <input type="number " name="max_price " placeholder="Prix max " min="0 ">
+                    <button type="submit">Rechercher</button>
+                </form>
+
+
+
+                <input type="number " placeholder="Prix max ">
+                <button type="submit">Rechercher</button>
+            </form>
+        </div>
+    </section>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+            <!-- Carousel (Auto-Scrolling Images) -->
+            <div class="carousel">
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-slide">
+                        <img src="asset/images/WhatsApp Image 2024-08-15 at 20.53.45_4f5396cb.jpg" alt="Image de la Propriété 1" onclick="openModal(this)">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="asset/images/WhatsApp Image 2024-08-15 at 20.53.44_9cda0d84.jpg" alt="Image de la Propriété 2" onclick="openModal(this)">
+                    </div>
+
+                    <div class="carousel-slide">
+                        <img src="asset/images/WhatsApp Image 2024-08-15 at 20.53.45_4f5396cb.jpg" alt="Image de la Propriété 4" onclick="openModal(this)">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="asset/images/WhatsApp Image 2024-08-15 at 20.53.45_b2608b02.jpg" alt="Image de la Propriété 5" onclick="openModal(this)">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- Sidebar (Right Side) -->
+            <div class="sidebar">
+                <h3>Nos Services Indépendants</h3>
+                <ul>
+                    <li>
+                        <div class="service-item">
+                            <img src="asset/image/actu2.jpg" alt="Service 1" class="service-img">
+                            <div class="service-info">
+                                <a href="service1.html" target="_blank">Location Appartement - Cocody Carnebière</a>
+                                <p> Prix : 580,000,000 XOF</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="service-item">
+                            <img src="asset/images/WhatsApp Image 2024-08-15 at 20.50.06_e4e24afe.jpg" alt="Service 2" class="service-img">
+                            <div class="service-info">
+                                <a href="service2.html" target="_blank"> A Cocody Carnebière </a>
+                                <p>LOYER : 2.000.000F négociable <br> NB : + 135.000F (Charges Copropriété)</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="service-item">
+                            <img src="asset/images/WhatsApp Image 2024-08-15 at 20.53.25_4172ce03.jpg" alt="Service 3" class="service-img">
+                            <div class="service-info">
+                                <a href="service4.html" target="_blank">RIVIERA4 MBADON ZONE AMBASSADE DE CHINE</a>
+                                <p> Prix de vente: 1,1 Milliards F CFA</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="property-details">
+            <h1>Villa Triplex de Luxe</h1>
+
+
+            <div class="container">
+                <div class="property-details">
+                    <h2>Aperçu de la Propriété</h2>
+                    <p>Nous avons le plaisir de proposer à la location une villa Triplex de haut standing, située à ABATTA derrière les Impôts. Cette propriété luxueuse comprend 10 pièces, une piscine et un jacuzzi.</p>
+
+                    <h3>Disposition :</h3>
+                    <div class="features">
+                        <div class="feature">
+                            <h4>Rez-de-Chaussée</h4>
+                            <ul>
+                                <li>Grand salon</li>
+                                <li>Cuisine équipée</li>
+                                <li>2 chambres autonomes</li>
+                            </ul>
+                        </div>
+                        <div class="feature">
+                            <h4>Premier Étage</h4>
+                            <ul>
+                                <li>4 chambres autonomes</li>
+                                <li>Salon privé</li>
+                            </ul>
+                        </div>
+                        <div class="feature">
+                            <h4>Deuxième Étage</h4>
+                            <ul>
+                                <li>2 chambres autonomes</li>
+                            </ul>
+                        </div>
+                        <div class="feature">
+                            <h4>Aménagements Supplémentaires</h4>
+                            <ul>
+                                <li>Garage pour 3 voitures</li>
+                                <li>Climatisation dans toutes les chambres et les salons</li>
+                                <li>Piscine</li>
+                                <li>Jacuzzi</li>
+                            </ul>
+                        </div><a href="index.html" class="details-btn">Accueil</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JavaScript to handle auto-scrolling -->
+        <script>
+            let currentIndex = 0;
+            const slides = document.querySelectorAll('.carousel-slide');
+            const totalSlides = slides.length;
+            const track = document.getElementById('carouselTrack');
+
+            function showNextSlide() {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                const offset = -currentIndex * 100; // Move the slides by 100% each time
+                track.style.transform = `translateX(${offset}%)`;
+            }
+
+            setInterval(showNextSlide, 3000); // Auto-scroll every 3 seconds
+        </script>
+        <footer>
+            <div class="container footer-container">
+                <!-- Footer Map Section -->
+                <div class="footer-map">
+                    <h3>Nous trouver</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3972.4438881761585!2d-3.983655625016357!3d5.349018594629658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwMjAnNTYuNSJOIDPCsDU4JzUxLjkiVw!5e0!3m2!1sen!2sin!4v1719565726579!5m2!1sen!2sin"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+                <!-- Footer Links and Contact -->
+                <div class="footer-info">
+                    <p>Contactez-nous : +225 27 22 43 07 94 | <a href="https://universgroupe.com">universgroupe.com</a></p>
+
+                    <!-- Links List -->
+                    <ul class="footer-links">
+                        <li><a href="propos.html"><i class="fas fa-info-circle"></i> À propos</a></li>
+                        <li><a href="Location"><i class="fas fa-home"></i> Location</a></li>
+                        <li><a href="Vente"><i class="fas fa-building"></i> Vente</a></li>
+                        <li><a href="Gestion Conciergerie"><i class="fas fa-concierge-bell"></i> Gestion</a></li>
+                        <li><a href="Syndic"><i class="fas fa-users"></i> Syndic</a></li>
+                        <li><a href="Conseil en Immobilier"><i class="fas fa-lightbulb"></i> Conseil</a></li>
+                        <li><a href="Contact"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                    </ul>
+
+                    <!-- Footer Privacy and Terms -->
+                    <ul class="footer-links">
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Termes et conditions</a></li>
+                    </ul>
+
+                    <!-- Social Media Links -->
+                    <ul class="social-media">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="asset/js/script.js"></script>
+    </body>
+
+</html>

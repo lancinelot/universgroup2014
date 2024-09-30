@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<immobilier>
+    <agence>
+        <nom>Univers Group</nom>
+        <contact>
+            <email>info@universgroup.com</email>
+            <telephone>+225 27 22 43 07 94</telephone>
+            <site>https://universgroupe.com</site>
+        </contact>
+    </agence>
+    <proprietes>
+        <propriete>
+            <id>villa1</id>
+            <titre>Villa Duplex - 6 Pièces</titre>
+            <location>Riviera 2, Sainte Famille</location>
+            <prix>1.8 Millions FCFA (négociable)</prix>
+        </propriete>
+        <propriete>
+            <id>appartement1</id>
+            <titre>Appartement 4 Pièces</titre>
+            <location>Marcory Zone 4, Rue Louis Lumière</location>
+            <prix>200,000,000 XOF avec meubles, 185,000,000 XOF sans meubles</prix>
+        </propriete>
+        <propriete>
+            <id>immeuble1</id>
+            <titre>Immeuble Inachevé R+4</titre>
+            <location>Riviera 3 Hibiscus</location>
+            <prix>580 millions FCFA</prix>
+        </propriete>
+        <propriete>
+            <id>villa2</id>
+            <titre>Villa à Vendre</titre>
+            <location>Riviera 4 M'Badon, Zone Ambassade de Chine</location>
+            <prix>1.1 Milliards F CFA</prix>
+        </propriete>
+    </proprietes>
+</immobilier>
